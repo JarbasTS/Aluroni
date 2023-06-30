@@ -1,14 +1,11 @@
 @import 'styles/variaveis';
-.titulo {
-  color: $dark;
-  font-size: 3rem;
-  margin-bottom: 30px;
-}
+
 .recomendados {
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 30px;
   justify-content: space-between;
 }
 .recomendado {
