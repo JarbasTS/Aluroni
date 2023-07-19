@@ -1,5 +1,6 @@
-import filtros from './filtros.json';
-import styles from './Filtros.module.scss';
+import { memo } from "react";
+import filtros from "./filtros.json";
+import styles from "./Filtros.module.scss";
 
 type IOpcao = (typeof filtros)[0];
 
@@ -8,7 +9,7 @@ interface FiltrosProps {
   setFiltro: (filtro: number | null) => void;
 }
 
-export default function Filtros({ filtro, setFiltro }: FiltrosProps) {
+function Filtros({ filtro, setFiltro }: FiltrosProps) {
   function selectFiltro(opcao: IOpcao) {
     if (filtro === opcao.id) return setFiltro(null);
     return setFiltro(opcao.id);
@@ -19,7 +20,7 @@ export default function Filtros({ filtro, setFiltro }: FiltrosProps) {
       {filtros.map(opcao => (
         <button
           className={`${styles.filtros__filtro} ${
-            filtro === opcao.id ? styles['filtros__filtro--ativo'] : ''
+            filtro === opcao.id ? styles["filtros__filtro--ativo"] : ""
           }`}
           key={opcao.id}
           onClick={() => selectFiltro(opcao)}
@@ -30,3 +31,5 @@ export default function Filtros({ filtro, setFiltro }: FiltrosProps) {
     </div>
   );
 }
+
+export default memo(Filtros);

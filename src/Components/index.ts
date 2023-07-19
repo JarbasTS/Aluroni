@@ -1,6 +1,5 @@
-import { Footer } from './Footer';
-import { Header } from './Header';
-import { Menu } from './Menu';
-import { TagsPratos } from './TagsPratos';
+import { Footer } from "./Footer";
+import { Menu } from "./Menu";
+import { Spinner } from "./Spinner";
 
-export { Footer, Header, Menu, TagsPratos };
+export { Footer, Menu, Spinner };

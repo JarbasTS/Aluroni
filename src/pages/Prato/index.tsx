@@ -1,8 +1,11 @@
-import styles from './Prato.module.scss';
-import { useParams, useNavigate } from 'react-router-dom';
-import cardapio from 'data/cardapio.json';
-import { Header, TagsPratos } from 'Components';
-import NotFound from 'pages/NotFound';
+import styles from "./Prato.module.scss";
+import { useParams, useNavigate } from "react-router-dom";
+import cardapio from "data/cardapio.json";
+import { lazy } from "react";
+
+const Header = lazy(() => import("Components/Header"));
+const TagsPratos = lazy(() => import("Components/TagsPratos"));
+const NotFound = lazy(() => import("pages/NotFound"));
 
 export default function Prato() {
   const { id } = useParams();
@@ -15,7 +18,7 @@ export default function Prato() {
   return (
     <Header>
       <button className={styles.voltar} onClick={() => navigate(-1)}>
-        {'< Voltar'}
+        {"< Voltar"}
       </button>
       <section className={styles.container}>
         <h1 className={styles.titulo}>{prato.title}</h1>

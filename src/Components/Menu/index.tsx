@@ -1,20 +1,20 @@
-import { Link } from 'react-router-dom';
-import logo from 'assets/logo.svg';
-import styles from './Menu.module.scss';
+import { Link } from "react-router-dom";
+import logo from "assets/logo.svg";
+import styles from "./Menu.module.scss";
 
 export function Menu() {
   const rotas = [
     {
-      label: 'Início',
-      to: '/'
+      label: "Início",
+      to: "/"
     },
     {
-      label: 'Cardápio',
-      to: '/cardapio'
+      label: "Cardápio",
+      to: "/cardapio"
     },
     {
-      label: 'Sobre',
-      to: '/sobre'
+      label: "Sobre",
+      to: "/sobre"
     }
   ];
 

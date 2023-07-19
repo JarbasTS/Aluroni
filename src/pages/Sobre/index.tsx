@@ -1,8 +1,8 @@
-import styles from './Sobre.module.scss';
-import stylesTema from 'styles/Tema.module.scss';
-import casa from 'assets/Sobre/casa.png';
-import massa1 from 'assets/Sobre/massa1.png';
-import massa2 from 'assets/Sobre/massa2.png';
+import styles from "./Sobre.module.scss";
+import stylesTema from "styles/Tema.module.scss";
+import casa from "assets/Sobre/casa.png";
+import massa1 from "assets/Sobre/massa1.png";
+import massa2 from "assets/Sobre/massa2.png";
 
 const imagens = [massa1, massa2];
 

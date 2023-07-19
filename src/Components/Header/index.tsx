@@ -1,8 +1,8 @@
-import styles from './Header.module.scss';
-import stylesTema from 'styles/Tema.module.scss';
-import { Outlet } from 'react-router-dom';
+import styles from "./Header.module.scss";
+import stylesTema from "styles/Tema.module.scss";
+import { Outlet } from "react-router-dom";
 
-export function Header({ children }: { children?: React.ReactNode }) {
+export default function Header({ children }: { children?: React.ReactNode }) {
   return (
     <>
       <header className={styles.header}>
